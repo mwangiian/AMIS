@@ -16,9 +16,12 @@ use App\Http\Controllers\DepartmentController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
+Route::get('/profile', function () {
+    return view('client/profile/profile');
+});
 
 Route::resource('advert', AdvertController::class);
 Route::resource('departments',DepartmentController::class);
