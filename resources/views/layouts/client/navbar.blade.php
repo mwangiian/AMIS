@@ -1,4 +1,3 @@
-@extends('layouts.client.layout')
 
 @section('navbar')
 

@@ -1,10 +1,9 @@
-@extends('layouts.client.layout')
 
 @section('sidebar')
 <nav id="sidebar">
     <div class="sidebar-header">
         <a href="/index.php">
-            <img src="/assets/static/logo.png" alt="JKUAT Logo" />
+            <img src="/img/logo.png" alt="JKUAT Logo" />
         </a>
         <h3>JKUAT Attachment <br /> Portal</h3>
         <div style="border-bottom: 1px solid white; width: 80%; margin: 10px auto;"></div>
@@ -25,37 +24,37 @@
             </a>
             <ul class="collapse list-unstyled" id="profileSubmenu">
                         <li>
-                            <a href="/pages/profil">View Profile</a>
+                            <a href="/profile">View Profile</a>
                         </li>
                         <li>
-                            <a href="/pages/bio-dat">View Bio-data</a>
+                            <a href="/profile/bio-data">View Bio-data</a>
                         </li>
                     </ul>
         </li>
         <li>
-            <a href="/pages/applications/index.php">
+            <a href="/applications">
                 <span class="icon"><i class="fas fa-edit" style="width: 10%;"></i></span>
                 <span>Applications</span>
             </a>
         </li>
         <li>
-            <a href="/pages/notifications/index.php">
+            <a href="notifications">
                 <span class="icon"><i class="fas fa-bell" style="width: 10%;"></i></span>
                 <span>Notifications</span>
             </a>
         </li>
         <li>
-            <a href="/pages/saved/index.php">
+            <a href="saved">
                 <span class="icon"><i class="fas fa-bookmark" style="width: 10%;"></i></span>
                 <span>Saved</span></a>
         </li>
         <li>
-            <a href="/pages/logbook/index.php">
+            <a href="logbook">
                 <span class="icon"><i class="fas fa-address-book" style="width: 10%;"></i></span>
                 <span>Logbook</span></a>
         </li>
         <li>
-            <a href="/pages/evaluation/index.php">
+            <a href="evaluation">
                 <span class="icon"><i class="fab fa-wpforms" style="width: 10%;"></i></span>
                 <span>Evaluation</span></a>
         </li>
