@@ -48,6 +48,7 @@ Route::get('/evaluation', function () {
     return view('client/evaluation/evaluation');
 });
 
+<<<<<<< HEAD
 
 //------------------Admin routes
 Route::get('/admin', function(){
@@ -111,5 +112,45 @@ Route::get('/admin/users/user', function(){
 });
 
 
+=======
+Route::get('/department', function () {
+    return view('department/dashboard');
+});
+
+Route::get('/department/new-advert', function () {
+    return view('department/new-advert/new-advert');
+});
+
+Route::get('/department/view-adverts', function () {
+    return view('department/view-adverts/adverts');
+});
+
+Route::get('/department/view-applications', function () {
+    return view('department/view-applications/applications');
+});
+
+Route::get('/department/view-applications/applicants', function () {
+    return view('department/view-applications/applicants');
+});
+
+Route::get('/department/programmes', function () {
+    return view('department/programmes/programmes');
+});
+
+Route::get('/department/programmes/programme', function () {
+    return view('department/programmes/programme');
+});
+
+Route::get('/department/rec-letters', function () {
+    return view('department/rec-letters/rec-letters');
+});
+
+Route::get('/department/rec-letters/send-rec-letters', function () {
+    return view('department/rec-letters/send-rec-letters');
+});
+
+
+
+>>>>>>> aa049544bad0799b4d9ff1def8ccd8e7b7f702ab
 Route::resource('advert', AdvertController::class);
 Route::resource('departments',DepartmentController::class);
