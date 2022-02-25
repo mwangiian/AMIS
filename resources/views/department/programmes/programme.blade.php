@@ -1,5 +1,7 @@
 @extends('layouts.department.layout')
 
+@section('title', 'Programme')
+
 @section('content')
 <div id="main-content">
     <div class="page-title">
