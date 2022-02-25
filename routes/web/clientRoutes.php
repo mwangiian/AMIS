@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdvertController;
-use App\Http\Controllers\DepartmentController;
+
 
 Route::get('/profile', function () {
     return view('client/profile/profile');

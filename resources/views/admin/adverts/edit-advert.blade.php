@@ -14,7 +14,7 @@
                 <h5>Title : </h5>
             </div>
             <div style="display: flex; flex-direction:row; align-items:center; margin:0 0 20px 20px;">
-                <img src="<?php echo BASE_URL . "/assets/static/logo.png" ?>" alt="Logo" style="height: 40px; width:40px; margin-right:20px;">
+                <img src="/img/logo.png" alt="Logo" style="height: 40px; width:40px; margin-right:20px;">
                 <input type="text" name="" id="" value="ICT Directorate Attachment" style="font-size:1.1rem; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; background-color:white;">
             </div>
         </div>

@@ -1,76 +1,72 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AdvertController;
-use App\Http\Controllers\DepartmentController;
 
 
 //------------------Admin routes
-Route::get('/admin', function(){
+Route::get('/', function(){
     return view('admin/dashboard');
 });
 
 //Adverts routes
-Route::get('/admin/adverts', function(){
+Route::get('/adverts', function(){
     return view('admin/adverts/adverts');
 });
-Route::get('/admin/adverts/advert', function(){
+Route::get('/adverts/advert', function(){
     return view('admin/adverts/advert');
 });
-Route::get('/admin/adverts/edit-advert', function(){
+Route::get('/adverts/edit-advert', function(){
     return view('admin/adverts/edit-advert');
 });
 
 
 //Department routes
-Route::get('/admin/departments', function(){
+Route::get('/departments', function(){
     return view('admin/departments/departments');
 });
-Route::get('/admin/departments/department', function(){
+Route::get('/departments/department', function(){
     return view('admin/departments/department');
 });
 
 
 //letters routes
-Route::get('/admin/letters', function(){
+Route::get('/letters', function(){
     return view('admin/letters/letters');
 });
 
 
 //mail routes
-Route::get('/admin/mail', function(){
+Route::get('/mail', function(){
     return view('admin/mail/mail');
 });
 
-//Profile routes
-Route::get('/admin/profile', function(){
+//profile routes
+Route::get('/profile', function(){
     return view('admin/profile/admin-profile');
 });
-
-Route::get('/admin/mail', function(){
+Route::get('/profile/edit-profile', function(){
     return view('admin/profile/edit-profile');
 });
 
-
 //programmes routes
-Route::get('/admin/programmes', function(){
+Route::get('/programmes', function(){
     return view('admin/programmes/programmes');
 });
-Route::get('/admin/programmes/programme', function(){
+Route::get('/programmes/programme', function(){
     return view('admin/programmes/programme');
 });
 
 
 //reports routes
-Route::get('/admin/reports', function(){
+Route::get('/reports', function(){
     return view('admin/reports/reports');
 });
 
 
 //users routes
-Route::get('/admin/users', function(){
+Route::get('/users', function(){
     return view('admin/users/users');
 });
-Route::get('/admin/users/user', function(){
+Route::get('/users/user', function(){
     return view('admin/users/user');
 });

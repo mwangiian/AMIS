@@ -54,13 +54,8 @@
                 <span>Logbook</span></a>
         </li>
         <li>
-<<<<<<< HEAD
-            <a href="evaluation">
-                <span class="icon"><i class="fas fa-wpforms" style="width: 10%;"></i></span>
-=======
             <a href="/user/evaluation">
                 <span class="icon"><i class="fab fa-wpforms" style="width: 10%;"></i></span>
->>>>>>> d95a10f77ef44017fc3eb13d3ae8526e64cb0bbd
                 <span>Evaluation</span></a>
         </li>
     </ul>
