@@ -26,7 +26,7 @@
                         <td>michaelbay@gmail.com</td>
                         <td>Attachee</td>
                         <td class="actions">
-                            <a class="action-button" href="">View Profile</a>
+                            <a class="action-button" href="/admin/users/user">View Profile</a>
                             <button>
                                 <i class="fas fa-trash"></i>
                             </button>

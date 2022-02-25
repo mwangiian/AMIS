@@ -1,6 +1,4 @@
-@extends('layouts.client.layout')
-
-@section('title', 'Profile')
+@extends('layouts.centralservices.layout')
 
 @section('content')
 <div id="main-content">
@@ -11,10 +9,6 @@
     <form class="mt-3">
         <!-- PERSONAL INFO -->
         <div class="container">
-            <div class="mb-3">
-                <label for="nationalid" class="form-label">National Identification Number</label>
-                <input type="number" class="form-control" id="nationalid" disabled>
-            </div>
 
             <div class="mb-3">
                 <label for="fname" class="form-label">First Name</label>
@@ -32,14 +26,16 @@
             </div>
 
             <div class="mb-3">
-                <label for="institution" class="form-label">Institution</label>
-                <input type="text" class="form-control" id="institution" disabled>
+                <label for="institution" class="form-label">Department</label>
+                <input type="text" class="form-control" id="department" disabled>
             </div>
         </div>
 
-    <div class="container text-right mb-3">
-    <a href="/user/profile/edit-profile" class="btn btn-primary">Edit Profile</a>
+    <div class="container text-right mb-3 ">
+        <a style="margin-right: 20px;" href="">Reset password</a>
+        <a href="/admin/profile/edit-profile" class="btn btn-primary">Edit Profile</a>
     </div>
+
     </form>
     </section>
 </div>
