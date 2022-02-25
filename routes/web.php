@@ -20,33 +20,7 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/profile', function () {
-    return view('client/profile/profile');
-});
 
-Route::get('/profile/bio-data', function () {
-    return view('client/bio-data/bio-data');
-});
-
-Route::get('/applications', function () {
-    return view('client/applications/applications');
-});
-
-Route::get('/notifications', function () {
-    return view('client/notifications/notifications');
-});
-
-Route::get('/saved', function () {
-    return view('client/saved/saved');
-});
-
-Route::get('/logbook', function () {
-    return view('client/logbook/logbook');
-});
-
-Route::get('/evaluation', function () {
-    return view('client/evaluation/evaluation');
-});
 
 
 //------------------Admin routes
@@ -109,43 +83,10 @@ Route::get('/admin/users', function(){
 Route::get('/admin/users/user', function(){
     return view('admin/users/user');
 });
+Route::prefix('/user')->group(__DIR__.'/web/clientRoutes.php');
 
+Route::prefix('/department')->group(__DIR__.'/web/departmentRoutes.php');
 
-Route::get('/department', function () {
-    return view('department/dashboard');
-});
-
-Route::get('/department/new-advert', function () {
-    return view('department/new-advert/new-advert');
-});
-
-Route::get('/department/view-adverts', function () {
-    return view('department/view-adverts/adverts');
-});
-
-Route::get('/department/view-applications', function () {
-    return view('department/view-applications/applications');
-});
-
-Route::get('/department/view-applications/applicants', function () {
-    return view('department/view-applications/applicants');
-});
-
-Route::get('/department/programmes', function () {
-    return view('department/programmes/programmes');
-});
-
-Route::get('/department/programmes/programme', function () {
-    return view('department/programmes/programme');
-});
-
-Route::get('/department/rec-letters', function () {
-    return view('department/rec-letters/rec-letters');
-});
-
-Route::get('/department/rec-letters/send-rec-letters', function () {
-    return view('department/rec-letters/send-rec-letters');
-});
 
 
 

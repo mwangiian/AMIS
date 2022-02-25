@@ -1,5 +1,7 @@
 @extends('layouts.client.layout')
 
+@section('title', 'Profile')
+
 @section('content')
 <div id="main-content">
     <div class="page-title">
@@ -36,7 +38,7 @@
         </div>
 
     <div class="container text-right mb-3">
-    <a href="/pages/profile/edit-profile.php" class="btn btn-primary">Edit Profile</a>
+    <a href="/user/profile/edit-profile" class="btn btn-primary">Edit Profile</a>
     </div>
     </form>
     </section>

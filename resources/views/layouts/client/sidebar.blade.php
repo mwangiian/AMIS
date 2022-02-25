@@ -24,37 +24,37 @@
             </a>
             <ul class="collapse list-unstyled" id="profileSubmenu">
                         <li>
-                            <a href="/profile">View Profile</a>
+                            <a href="/user/profile">View Profile</a>
                         </li>
                         <li>
-                            <a href="/profile/bio-data">View Bio-data</a>
+                            <a href="/user/profile/bio-data">View Bio-data</a>
                         </li>
                     </ul>
         </li>
         <li>
-            <a href="/applications">
+            <a href="/user/applications">
                 <span class="icon"><i class="fas fa-edit" style="width: 10%;"></i></span>
                 <span>Applications</span>
             </a>
         </li>
         <li>
-            <a href="notifications">
+            <a href="/user/notifications">
                 <span class="icon"><i class="fas fa-bell" style="width: 10%;"></i></span>
                 <span>Notifications</span>
             </a>
         </li>
         <li>
-            <a href="saved">
+            <a href="/user/saved">
                 <span class="icon"><i class="fas fa-bookmark" style="width: 10%;"></i></span>
                 <span>Saved</span></a>
         </li>
         <li>
-            <a href="logbook">
+            <a href="/user/logbook">
                 <span class="icon"><i class="fas fa-address-book" style="width: 10%;"></i></span>
                 <span>Logbook</span></a>
         </li>
         <li>
-            <a href="evaluation">
+            <a href="/user/evaluation">
                 <span class="icon"><i class="fab fa-wpforms" style="width: 10%;"></i></span>
                 <span>Evaluation</span></a>
         </li>
