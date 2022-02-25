@@ -55,7 +55,7 @@
         </li>
         <li>
             <a href="evaluation">
-                <span class="icon"><i class="fab fa-wpforms" style="width: 10%;"></i></span>
+                <span class="icon"><i class="fas fa-wpforms" style="width: 10%;"></i></span>
                 <span>Evaluation</span></a>
         </li>
     </ul>

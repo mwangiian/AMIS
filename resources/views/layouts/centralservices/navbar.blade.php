@@ -17,9 +17,14 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link" href="/admin/profile">
+                        <span class="icon"><i class="fas fa-user" style="width: 15%;"></i></span>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#">
-                    <span class="icon"><i class="fas fa-user" style="width: 15%;"></i></span>
-                    <span>Michael</span>
+                        <span>Logout</span>
                     </a>
                 </li>
             </ul>
