@@ -31,7 +31,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="" defer></script>
 
-    <title>@yield('title')</title>
+    <title>IAMIS</title>
 
 </head>
 <body>
@@ -67,7 +67,7 @@
             <div class="search-form">
                 <form action="">
                     <div>
-                        <input type="text" placeholder="Search for attachment">
+                        <input style="width: 100%" type="text" placeholder="Search for attachment">
                     </div>
                     <!-- <div class="college-filter">
                         <label class="filter-dropdown" for="filter-drop">
@@ -217,7 +217,7 @@
 
                                             <div class="mod-apply">
                                                 <form method="POST" action="application.php">
-                                                    <a href="" class="btn btn-primary" style="background:#0d7000;">Apply</a>
+                                                    <a href="/user/applications/apply" class="btn btn-primary" style="background:#0d7000;">Apply</a>
                                                 </form>
                                             </div>
                                         </div>

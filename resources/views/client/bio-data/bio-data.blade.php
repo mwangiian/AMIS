@@ -1,5 +1,7 @@
 @extends('layouts.client.layout')
 
+@section('title', 'Bio-Data')
+
 @section('content')
 <div id="main-content">
                     <div class="page-title">
@@ -111,7 +113,7 @@
 
                         
                     <div class="container text-right mb-3">
-                    <a href=" " class="btn btn-primary">Edit Bio-Data</a>
+                    <a href="/user/profile/edit-bio-data" class="btn btn-primary">Edit Bio-Data</a>
                     </div>
                     </form>
                     </section>

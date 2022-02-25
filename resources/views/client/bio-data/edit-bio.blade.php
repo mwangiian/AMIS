@@ -1,5 +1,7 @@
 @extends('layouts.client.layout')
 
+@section('title', 'Edit Bio-Data')
+
 @section('content')
 <div id="main-content">
                     <div class="page-title">
