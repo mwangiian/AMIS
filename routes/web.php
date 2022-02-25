@@ -48,7 +48,6 @@ Route::get('/evaluation', function () {
     return view('client/evaluation/evaluation');
 });
 
-<<<<<<< HEAD
 
 //------------------Admin routes
 Route::get('/admin', function(){
@@ -112,7 +111,6 @@ Route::get('/admin/users/user', function(){
 });
 
 
-=======
 Route::get('/department', function () {
     return view('department/dashboard');
 });
@@ -151,6 +149,5 @@ Route::get('/department/rec-letters/send-rec-letters', function () {
 
 
 
->>>>>>> aa049544bad0799b4d9ff1def8ccd8e7b7f702ab
 Route::resource('advert', AdvertController::class);
 Route::resource('departments',DepartmentController::class);

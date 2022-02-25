@@ -9,6 +9,8 @@
     <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/admin/styles.css">
+
     
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -31,6 +33,10 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <script src="" defer></script>
+
+    <!-- Chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
 
     <title>@yield('title')</title>
 
@@ -56,5 +62,7 @@
         </div>
     </main>
     <script src="/js/script.js"></script>
+    <script src="/js/admin/script.js"></script>
+
 </body>
 </html>
