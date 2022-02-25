@@ -115,13 +115,13 @@
                             </div>
                         </div>
                         <div>
-                            <p>Filter by school</p>
+                            <p>Filter by Department</p>
                             <div class="school-filter-list">
                                 <?php for ($i = 0; $i < 15; $i++) : ?>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Default checkbox
+                                            Default checkbox (2)
                                         </label>
                                     </div>
                                 <?php endfor; ?>

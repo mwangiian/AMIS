@@ -204,6 +204,7 @@ a.article:hover {
   transition: all 0.3s;
   position: relative;
   padding-bottom: 4vh;
+  background-color: var(--background-white);
 }
 #main-content {
   display: block;
