@@ -52,10 +52,34 @@
                     </div>
                 </a>
 
-                <div class="nav-buttons">
-                    <a href="">Register</a>
-                    <a href="" class="login-button">Sign In</a>
-                </div>
+                @guest
+                    <div class="nav-buttons">
+                        @if (Route::has('login'))
+                            <a href="{{ route('register') }}" >{{ __('Register') }}</a>
+                        @endif
+
+                        @if (Route::has('register'))
+                            <a class="login-button" href="{{ route('login') }}" >{{ __('Sign In') }}</a>
+                        @endif
+                    </div>
+                    @else
+                        <div class="nav-buttons " style="display: flex; flex-direction:row; color:white; justify-content:center; align-items:center;">
+                            <a style="color:white;" href="/user/profile" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                {{-- {{ Auth::user()->name }} --}}
+                                Profile
+                            </a>
+                                <a class="logout-button"    href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                    document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                        </div>
+                @endguest
+                
             </nav>
         </div>
         <header class="showcase">
@@ -67,7 +91,7 @@
             <div class="search-form">
                 <form action="">
                     <div>
-                        <input style="width: 100%" type="text" placeholder="Search for attachment">
+                        <input style="width: 100%" type="text" placeholder="Search for attachment" >
                     </div>
                     <!-- <div class="college-filter">
                         <label class="filter-dropdown" for="filter-drop">
@@ -230,7 +254,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer style="background-color: var(--dark-grey-background)">
         <div>
             <p>JKUAT &copy; 2022. All rights reserved</p>
         </div>

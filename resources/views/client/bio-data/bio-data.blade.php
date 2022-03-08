@@ -13,7 +13,7 @@
                         <div class="container">
                             <div class="mb-3">
                                 <label for="dateOfBirth" class="form-label">Date Of Birth</label>
-                                <input type="date" class="form-control" id="dateOfBirth" disabled>
+                                <input type="date" class="form-control" id="date_of_birth" disabled>
                             </div>
 
                             <div class="mb-3">
@@ -23,7 +23,7 @@
 
                             <div class="mb-3">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="phone" disabled>
+                                <input type="number" class="form-control" id="mobile-number" disabled>
                             </div>
                         </div>
 
@@ -46,7 +46,7 @@
 
                             <div class="mb-3 container">
                                 <label for="emergencyPhone" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" id="emergencyPhone" disabled>
+                                <input type="number" class="form-control" id="next_of_kin_contact" disabled>
                             </div>
                         </div>
 

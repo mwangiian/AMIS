@@ -11,16 +11,27 @@
             <i class="fas fa-bars"></i>
         </button>
         <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-align-justify"></i>
+            <i class="fas fa-user"></i>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="">
-                        <span class="icon"><i class="fas fa-power-off" style="width: 20%;"></i></span>
-                        <span>Logout</span>
+                    <a class="nav-link" href="/user/profile">
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span>{{ Auth::user()->name }}</span>
                     </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <span> {{ __('Logout') }}</span>
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
+                    
                 </li>
             </ul>
         </div>

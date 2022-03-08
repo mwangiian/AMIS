@@ -1,8 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AdvertController;
 use App\Http\Controllers\DepartmentController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,8 +30,14 @@ Route::prefix('/department')->group(__DIR__.'/web/departmentRoutes.php');
 
 Route::prefix('/admin')->group(__DIR__.'/web/centralServicesRoutes.php');
 
+//Auth Routing
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 
 Route::resource('advert', AdvertController::class);
 Route::resource('departments',DepartmentController::class);
+

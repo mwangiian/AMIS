@@ -78,6 +78,12 @@ main {
   padding: 5px 20px;
   border-radius: 10px;
 }
+.nav-buttons .logout-button {
+  border: 1px solid rgba(176, 176, 176, 0.718) !important;
+  width: 100px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
 header {
   padding-top: 5vh;
 }
@@ -438,7 +444,6 @@ footer styling
 footer {
   margin-top: 10px;
   color: var(--font-white);
-  background-color: var(--dark-grey-background);
 }
 
 .action-button {

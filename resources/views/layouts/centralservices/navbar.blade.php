@@ -18,15 +18,19 @@
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/profile">
-                        <span>Profile</span>
-                        <span class="icon"><i class="fas fa-user" style="width: 20%;"></i></span>
+                        <span class="icon"><i class="fas fa-user"></i></span>
+                        <span>{{ Auth::user()->name }}</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <span>Logout</span>
-                        <span class="icon"><i class="fas fa-power-off" style="width: 20%;"></i></span>
+                    <a class="nav-link" href="{{ route('logout') }}"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        <span> {{ __('Logout') }}</span>
                     </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
                 </li>
             </ul>
         </div>
